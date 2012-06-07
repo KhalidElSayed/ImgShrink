@@ -5,4 +5,4 @@ Resizes your images before sharing. Avoid sending 2MB picture messages etc!
 
 Dependencies
 ------------
-Requires ActionBarSherlock 4.0.1s
+Requires ActionBarSherlock. Check the android.library.reference in the project.properties

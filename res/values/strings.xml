@@ -5,7 +5,7 @@
     <string name="app_name">ImgShrink</string>
     <string name="size_name_phone">Phone</string>
     <string name="size_dims_phone">(320 x 480)</string>
-    <string name="size_size_phone">200KB</string>
+    <string name="size_size_phone">~200KB</string>
     <string name="size_name_tablet">Tablet</string>
     <string name="size_dims_tablet">(1024 x 768)</string>
     <string name="size_size_tablet">1.5MB</string>
