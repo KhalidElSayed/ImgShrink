@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/main_bg">
+    
+	<fragment android:name="com.shivgadhia.android.imgshrink.headerFragment"
+            android:id="@+id/headerFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	/>
+	<ViewSwitcher 
+	    android:id="@+id/vsMain"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+	    >
+	    <LinearLayout
+			android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical"
+			>
+	        <fragment android:name="com.shivgadhia.android.imgshrink.imagePickerFragment"
+            android:id="@+id/imagePickerFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+			/>
+	            <Button
+        	android:id="@+id/btnContinue"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Continue" 
+	        android:textColor="#88ffffff"
+	        android:textSize="20dp"
+	        android:textStyle="bold"
+	        android:gravity="center"
+	        android:layout_margin="20dp"
+	        android:padding="10dp"
+	        android:background="@drawable/button_selector"
+	        />
+	    </LinearLayout>
+	    <LinearLayout
+	         android:orientation="vertical"
+	         android:layout_width="fill_parent"
+	         android:layout_height="fill_parent"
+	         android:gravity="center"
+		>
+			<!--<TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Image sizes fragment to go here" 
+		        android:textSize="18dp"
+		        android:textStyle="bold"
+		        android:textColor="#51504e"
+		        android:padding="20dp"
+		        android:paddingBottom="0dp"
+		        android:gravity="right|center"
+		        
+		        />-->
+			
+			
+			<fragment android:name="com.shivgadhia.android.imgshrink.imageSizesFragment"
+            android:id="@+id/imageSizessFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+			/>
+		</LinearLayout>
+	    
+	</ViewSwitcher>
+	
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+>
+	<ViewStub 
+	    android:id="@+id/phoneStub"
+	    android:inflatedId="@+id/phoneStub_inf"
+	    android:layout="@layout/size_item_stub"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+	<ViewStub 
+	    android:id="@+id/tabletStub"
+	    android:inflatedId="@+id/tabletStub_inf"
+	    android:layout="@layout/size_item_stub"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+	<ViewStub 
+	    android:id="@+id/tvStub"
+	    android:inflatedId="@+id/tvStub_inf"
+	    android:layout="@layout/size_item_stub"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

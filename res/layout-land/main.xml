@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/main_bg">
+	    <LinearLayout
+			android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical"
+        	android:layout_weight="1"
+			>
+	        <fragment android:name="com.shivgadhia.android.imgshrink.imagePickerFragment"
+            android:id="@+id/imagePickerFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+			/>
+	            <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Description - what to do!" 
+        android:textSize="18dp"
+        android:textStyle="normal"
+        android:textColor="#51504e"
+        android:padding="20dp"
+        android:paddingBottom="0dp"
+        android:gravity="center"
+        
+        />
+	    </LinearLayout>
+	    <LinearLayout
+	         android:orientation="vertical"
+	         android:layout_width="fill_parent"
+	         android:layout_height="fill_parent"
+	         android:gravity="center"
+	         android:layout_weight="1"
+		>
+			<fragment android:name="com.shivgadhia.android.imgshrink.imageSizesFragment"
+            android:id="@+id/imageSizesFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+			/>
+		</LinearLayout>
+	    
+</LinearLayout>

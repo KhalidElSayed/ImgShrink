@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  	 xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/vf1_btn_pick"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+     	 android:clickable="true"
+>
+	<TextView
+	    android:id="@+id/tvSelectImg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Pick an image" 
+        android:textColor="#808080"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_border"
+        android:padding="20dp"
+        android:clickable="false"
+        android:layout_centerInParent="true"
+        />
+	
+	<ImageView 
+	    android:id="@+id/ivSelectedImg"
+       	android:layout_width="fill_parent"
+       	android:layout_height="fill_parent"
+       	android:scaleType="fitCenter"
+   	 	android:clickable="true"
+   	 	android:visibility="invisible"
+   	 	android:layout_centerInParent="true"
+   	 	android:layout_margin="20dp"
+   	 	android:padding="5dp"
+   	 	android:background="@drawable/rounded_border_solid"
+	    />
+</RelativeLayout>
+<!--  
+		<LinearLayout
+	         android:orientation="vertical"
+	         android:layout_width="fill_parent"
+	         android:layout_height="fill_parent"
+	         android:gravity="center"
+		>
+			<TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/app_name" 
+		        android:textSize="50dp"
+		        android:textStyle="bold"
+		        android:textColor="#51504e"
+		        android:padding="20dp"
+		        android:paddingBottom="0dp"
+		        android:gravity="right|center"
+		        
+		        />
+			<TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Shrink, then share!" 
+		        android:textColor="#808080"
+		        android:textSize="20dp"
+		        android:textStyle="normal"
+		        android:paddingTop="0dp"
+		        android:paddingRight="20dp"
+		        android:gravity="right|top"
+		        
+		        />
+		</LinearLayout>
+-->
