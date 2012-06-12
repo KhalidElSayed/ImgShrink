@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewStub;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class imageSizesFragment extends Fragment {
+public class imageSizesFragment extends Fragment implements OnClickListener{
 	private static final String SELECTED_PICTURE = null;
 	private String mSelectedImage;
 
@@ -37,12 +39,9 @@ public class imageSizesFragment extends Fragment {
 		
 		
 	}
-	
-	// set all the click listeners
-	private void bindControls(){
-		
-	}
 
+	
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -68,6 +67,26 @@ public class imageSizesFragment extends Fragment {
 		tvSizeSize.setText(sizeSizeRes);
 		ImageView ivDeviceIcon = (ImageView) rootView.findViewById(R.id.ivDeviceIcon);
 		ivDeviceIcon.setImageResource(imgRes);
+		rootView.setOnClickListener(this);
+	}
+
+
+
+	@Override
+	public void onClick(View v) {
+		int id = v.getId();
+		switch(id){
+		case R.id.phoneStub_inf : 
+			Toast.makeText(getActivity(), "onCLick called - for Phone", Toast.LENGTH_SHORT).show();
+			break;
+		case R.id.tabletStub_inf : 
+			Toast.makeText(getActivity(), "onCLick called - for Tablet", Toast.LENGTH_SHORT).show();
+			break;
+		case R.id.tvStub_inf : 
+			Toast.makeText(getActivity(), "onCLick called - for TV", Toast.LENGTH_SHORT).show();
+			break;
+		}
+		
 		
 	}
 	

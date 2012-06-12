@@ -11,17 +11,20 @@
 	    android:inflatedId="@+id/phoneStub_inf"
 	    android:layout="@layout/size_item_stub"
 	    android:layout_width="fill_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        />
 	<ViewStub 
 	    android:id="@+id/tabletStub"
 	    android:inflatedId="@+id/tabletStub_inf"
 	    android:layout="@layout/size_item_stub"
 	    android:layout_width="fill_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        />
 	<ViewStub 
 	    android:id="@+id/tvStub"
 	    android:inflatedId="@+id/tvStub_inf"
 	    android:layout="@layout/size_item_stub"
 	    android:layout_width="fill_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        />
 </LinearLayout>
